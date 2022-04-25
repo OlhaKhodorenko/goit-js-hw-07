@@ -22,7 +22,8 @@ function onPrewiewImgClick(evt){
      if(!isImgEl){
       return;}
       const lightbox = new SimpleLightbox('.gallery a',
-       {captionsData: "alt",
+       {docClose: false,
+           captionsData: "alt",
        captionPosition: 'bottom', 
         captionDelay: 250,
     });

@@ -20,6 +20,6 @@ return galleryItems.map(({
         captionsData: "alt",
         captionDelay: 250,
     });
-    evt.preventDefault();
+    
  
   

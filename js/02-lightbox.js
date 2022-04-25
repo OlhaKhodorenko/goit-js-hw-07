@@ -1,11 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-//console.log(galleryItems);
 const galleryContainer = document.querySelector(".gallery");
 const galleryMmarkup = createGallaryMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML("beforeend", galleryMmarkup);
-galleryContainer.addEventListener("click", onPrewiewImgClick);
+
 
 function  createGallaryMarkup (galleryItems){
 return galleryItems.map(({
@@ -16,12 +15,11 @@ return galleryItems.map(({
 </a>`;
 }).join("");
 }
-function onPrewiewImgClick(evt){
       const lightbox = new SimpleLightbox('.gallery a',
        {docClose: false,
         captionsData: "alt",
         captionDelay: 250,
     });
     evt.preventDefault();
-  }
+ 
   
